@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#1A237E">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="153dp"
+            android:layout_marginLeft="153dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginBottom="17dp"
+            app:srcCompat="@drawable/info"
+            android:contentDescription="TODO" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="390dp"
+        android:layout_height="714dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/scrollableTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo_bold"
+        android:padding="16dp"
+        android:scrollbars="vertical"
+        android:text="@string/at_codecrafters_we_are_a_dedicated_team_committed_to_enhancing_your_commuting_experience_through_innovative_technological_solutions_our_latest_endeavor_the_utis_unified_transit_information_system_project_aims_to_simplify_the_process_of_accessing_government_bus_routes_timings_and_schedules_for_android_users_with_utis_we_recognize_the_challenges_commuters_face_in_navigating_public_transportation_systems_efficiently_our_goal_is_to_empower_users_with_a_user_friendly_interface_that_provides_comprehensive_information_about_government_bus_services_whether_you_re_a_daily_commuter_or_a_traveler_exploring_new_destinations_utis_strives_to_be_your_go_to_companion_for_hassle_free_transit_planning_our_team_at_codecrafters_combines_expertise_in_software_development_and_a_passion_for_improving_urban_mobility_by_leveraging_the_latest_advancements_in_mobile_technology_we_ensure_that_utis_delivers_accurate_and_real_time_transit_data_allowing_users_to_make_informed_decisions_about_their_journeys_through_utis_we_aspire_to_contribute_to_the_development_of_sustainable_and_accessible_transportation_infrastructure_we_believe_that_by_simplifying_access_to_public_transit_information_we_can_encourage_more_people_to_choose_eco_friendly_modes_of_transportation_thereby_reducing_congestion_and_environmental_impact_join_us_on_our_mission_to_revolutionize_commuting_with_utis_together_let_s_navigate_cities_smarter_and_make_every_journey_a_seamless_experience"
+        android:textSize="24sp" />
+    </ScrollView>
+
+</RelativeLayout>

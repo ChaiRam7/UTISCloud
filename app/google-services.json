@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "680755154936",
+    "project_id": "utis-br22",
+    "storage_bucket": "utis-br22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680755154936:android:84b671b780d4b66f7f900d",
+        "android_client_info": {
+          "package_name": "com.example.utis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzqeU7cDz-K8nIAkxqnqRs3935dzNpSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "718787629813",
+    "project_id": "vertical-planet-416113",
+    "storage_bucket": "vertical-planet-416113.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718787629813:android:6e3563d18b8b35f07f6bbc",
+        "android_client_info": {
+          "package_name": "com.example.utis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY4Q7rTaYRovNYThdIeqpQ4sYq-PNitA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

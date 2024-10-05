@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#1A237E">
+
+        <ImageView
+            android:id="@+id/imageBackView"
+            android:layout_width="83dp"
+            android:layout_height="61dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="26dp"
+            android:contentDescription="TOD"
+            app:srcCompat="@drawable/back" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/timely"
+        android:layout_width="wrap_content"
+        android:layout_height="192dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:textSize="25sp"
+        android:focusable="false"
+        android:clickable="false"
+        android:inputType="none"
+        tools:ignore="LabelFor" />
+
+</RelativeLayout>

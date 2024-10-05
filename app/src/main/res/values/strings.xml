@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">BusBuddyVellore</string>
+    <string name="title_activity_home">Home_activity</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="at_codecrafters_we_are_a_dedicated_team_committed_to_enhancing_your_commuting_experience_through_innovative_technological_solutions_our_latest_endeavor_the_utis_unified_transit_information_system_project_aims_to_simplify_the_process_of_accessing_government_bus_routes_timings_and_schedules_for_android_users_with_utis_we_recognize_the_challenges_commuters_face_in_navigating_public_transportation_systems_efficiently_our_goal_is_to_empower_users_with_a_user_friendly_interface_that_provides_comprehensive_information_about_government_bus_services_whether_you_re_a_daily_commuter_or_a_traveler_exploring_new_destinations_utis_strives_to_be_your_go_to_companion_for_hassle_free_transit_planning_our_team_at_codecrafters_combines_expertise_in_software_development_and_a_passion_for_improving_urban_mobility_by_leveraging_the_latest_advancements_in_mobile_technology_we_ensure_that_utis_delivers_accurate_and_real_time_transit_data_allowing_users_to_make_informed_decisions_about_their_journeys_through_utis_we_aspire_to_contribute_to_the_development_of_sustainable_and_accessible_transportation_infrastructure_we_believe_that_by_simplifying_access_to_public_transit_information_we_can_encourage_more_people_to_choose_eco_friendly_modes_of_transportation_thereby_reducing_congestion_and_environmental_impact_join_us_on_our_mission_to_revolutionize_commuting_with_utis_together_let_s_navigate_cities_smarter_and_make_every_journey_a_seamless_experience">At CodeCrafters, we are a dedicated team committed to enhancing your commuting experience through innovative technological solutions. Our latest endeavor, the UTIS (Unified Transit Information System) project, aims to simplify the process of accessing government bus routes, timings, and schedules for Android users. With UTIS, we recognize the challenges commuters face in navigating public transportation systems efficiently. Our goal is to empower users with a user-friendly interface that provides comprehensive information about government bus services. Whether you\'re a daily commuter or a traveler exploring new destinations, UTIS strives to be your go-to companion for hassle-free transit planning. Our team at CodeCrafters combines expertise in software development and a passion for improving urban mobility. By leveraging the latest advancements in mobile technology, we ensure that UTIS delivers accurate and real-time transit data, allowing users to make informed decisions about their journeys. Through UTIS, we aspire to contribute to the development of sustainable and accessible transportation infrastructure. We believe that by simplifying access to public transit information, we can encourage more people to choose eco-friendly modes of transportation, thereby reducing congestion and environmental impact. Join us on our mission to revolutionize commuting with UTIS. Together, let\'s navigate cities smarter and make every journey a seamless experience.</string>
+    <string name="no_text">No_text</string>
+    <string name="todo">TODO</string>
+    <string name="no_messages">No messages!!!!!!!</string>
+    <string name="TextView">TextView</string>
+    <string name="No_direct_buses_available">TextView</string>
+    <string name="BusBuddyVellore">app_name</string>
+    <string name="made_for_vellore_by_vitians">Made for Vellore by VITians</string>
+    <string name="made_for_vellore_by_vitian">Vitian</string>
+    <string name="timing">Timing</string>
+    <string name="departure_zone">🟢 Departure Zone</string>
+    <string name="arrival_zone">🔴 Arrival Zone</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="app_logo">App_logo\n</string>
+    <string name="contact_report"><![CDATA[Contact & report]]></string>
+    <string name="reach_developer">REACH DEVELOPER</string>
+    <string name="report_booking"><![CDATA[REPORT & BOOKING]]></string>
+    <string name="report_and_booking">REPORT AND BOOKING</string>
+    <string name="show_bus_position">Show Bus Position</string>
+    <string name="route_it">Route It</string>
+</resources>

@@ -1,0 +1,206 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <!-- Main Content Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY">
+
+        <!-- Header Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="#518AFF">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                app:srcCompat="@drawable/menu" />
+        </RelativeLayout>
+
+        <!-- Your main content goes here -->
+        <!-- Grouping your Spinner, TextViews, and Buttons into a box-like layout -->
+        <LinearLayout
+            android:id="@+id/boxLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="323dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="313dp"
+            android:background="@drawable/box_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Departure Zone Label -->
+            <TextView
+                android:id="@+id/departureZone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/departure_zone"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Departure Spinner -->
+            <Spinner
+                android:id="@+id/departure"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/white_button_background"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/your_text_color" />
+
+            <!-- Arrival Zone Label -->
+            <TextView
+                android:id="@+id/arrivalzone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/arrival_zone"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Arrival Spinner -->
+            <Spinner
+                android:id="@+id/arrival"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/white_button_background"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/your_text_color" />
+
+            <!-- Horizontal Layout for Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Timing Button -->
+                <Button
+                    android:id="@+id/timing"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/aldrich"
+                    android:text="@string/timing"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17.5sp"
+                    android:textStyle="bold" />
+
+                <!-- Schedule Button -->
+                <Button
+                    android:id="@+id/schedule"
+                    android:layout_width="5dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Schedule"
+                    android:textAllCaps="false"
+                    android:textColor="#F1F1F1"
+                    android:textSize="17.5sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Other ImageViews -->
+        <ImageView
+            android:id="@+id/AboutUs"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/about" />
+
+        <ImageView
+            android:id="@+id/chatImageView"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toStartOf="@+id/notification"
+            android:layout_toLeftOf="@+id/notification"
+            android:src="@drawable/support" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@id/chatImageView"
+            android:layout_toLeftOf="@id/chatImageView"
+            android:layout_toEndOf="@id/AboutUs"
+            android:layout_toRightOf="@id/AboutUs"
+            android:src="@drawable/tnstc" />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="563dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/notify" />
+
+    </RelativeLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
