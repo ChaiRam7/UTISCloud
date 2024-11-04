@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -43,6 +45,23 @@
     <activity
         android:name="com.example.utis.HomeActivity"
         android:exported="false" />
+        <activity
+            android:name="com.example.utis.ChatbotActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.utis.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.utis.TempStopActivity"
+            android:exported="false" />
+        <activity android:name=".TravelLogActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".LocationTrackingService"
+            android:enabled="true"
+            android:exported="false" />
+
 
 
         <meta-data

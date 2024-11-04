@@ -1,13 +1,33 @@
 {
   "project_info": {
-    "project_number": "680755154936",
-    "project_id": "utis-br22",
-    "storage_bucket": "utis-br22.appspot.com"
+    "project_number": "960607008516",
+    "firebase_url": "https://busbuddy-18eb3-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "busbuddy-18eb3",
+    "storage_bucket": "busbuddy-18eb3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:680755154936:android:84b671b780d4b66f7f900d",
+        "mobilesdk_app_id": "1:960607008516:android:9c608b078869e0ba3b4251",
+        "android_client_info": {
+          "package_name": "com.example.UTIS"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPmUUrrPO3PzonBXNKUadV9wO6jodQor8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960607008516:android:8295a31727ee41303b4251",
         "android_client_info": {
           "package_name": "com.example.utis"
         }
@@ -15,7 +35,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCkzqeU7cDz-K8nIAkxqnqRs3935dzNpSI"
+          "current_key": "AIzaSyCPmUUrrPO3PzonBXNKUadV9wO6jodQor8"
         }
       ],
       "services": {

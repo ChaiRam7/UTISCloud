@@ -26,4 +26,13 @@
     <string name="report_and_booking">REPORT AND BOOKING</string>
     <string name="show_bus_position">Show Bus Position</string>
     <string name="route_it">Route It</string>
+    <string name="chatbot_response_will_be_here">Chatbot Response will be here</string>
+    <string name="click_on_the_map_to_view_nearby_buses">Click on the map to view nearby buses</string>
+    <string name="detect_my_location_and_pin">Detect My Location and Pin</string>
+    <string name="cancel_temporary_stop">Cancel Temporary Stop</string>
+    <string name="make_temporary_stop">Make temporary Stop</string>
+    <string name="cancel">cancel</string>
+    <string name="make_a_stop">make a stop</string>
+    <string name="select_date">Select Date</string>
+    <string name="travel_log">Travel Log:</string>
 </resources>

@@ -46,6 +46,9 @@ public class HomeActivity extends AppCompatActivity {
     private ActionBarDrawerToggle toggle;
     private NavigationView navigationView;
     private ImageView menuButton;
+    private   ImageView tempImageView;
+
+
 
     private static final String DATABASE_NAME = "my_transport_schedules.db";
     private static final String TABLE_NAME = "routes";
@@ -68,13 +71,15 @@ public class HomeActivity extends AppCompatActivity {
         scheduleButton=findViewById(R.id.schedule);
         cimage = findViewById(R.id.chatImageView);
         dimage=findViewById(R.id.imageView3);
-        drawerLayout = findViewById(R.id.drawer_layout);
+        drawerLayout = findViewById(R.id.optimise);
         navigationView = findViewById(R.id.nav_view);
         menuButton = findViewById(R.id.menu);
-
+        ImageView chatbotImageView = findViewById(R.id.chatbot);
+        ImageView mapImageView = findViewById(R.id.map);
+        ImageView tempImageView = findViewById(R.id.temp);
         NavigationView navigationView = findViewById(R.id.nav_view);
         Menu menu = navigationView.getMenu();
-
+        ImageView viewTravelLogButton = findViewById(R.id.viewTravelLogButton);
         MenuItem appInfoItem = menu.findItem(R.id.nav_app_info);
         View actionView = appInfoItem.getActionView();
 
@@ -95,6 +100,16 @@ public class HomeActivity extends AppCompatActivity {
                     drawerLayout.openDrawer(navigationView);
                 }
             }
+        });
+
+        tempImageView.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, TempStopActivity.class);
+            startActivity(intent);
+        });
+
+        viewTravelLogButton.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, TravelLogActivity.class);
+            startActivity(intent);
         });
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -118,6 +133,25 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        chatbotImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, ChatbotActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        mapImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View
+                    v) {
+                Intent intent = new Intent(HomeActivity.this, MapActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
 
         cimage.setOnClickListener(new View.OnClickListener() {
@@ -289,9 +323,14 @@ public class HomeActivity extends AppCompatActivity {
 
         try {
             db = dbHelper.getWritableDatabase(); // Open database for writing
+            insertData(db, "T11 G", "VELLORE", "07:00:00", "A.K.PADAVEDU", "08:20:00");
+            insertData(db, "T11 G", "VELLORE", "07:00:00", "A.K.PADAVEDU", "08:20:00");
+            insertData(db, "T11 G", "VELLORE", "14:20:00", "A.K.PADAVEDU", "15:40:00");
+            insertData(db, "T11 G", "VELLORE", "18:45:00", "A.K.PADAVEDU", "20:05:00");
+            insertData(db, "T 3AA", "VELLORE", "05:20:00", "ADUKAMPARAI G.H.", "05:50:00");
+            insertData(db, "T11 G", "VELLORE", "12:45:00", "ADUKAMPARAI G.H.", "13:15:00");
 
 
-            insertData(db, "T10DA", "KATPADI", "20:10:00", "WALAJA", "21:20:00");
 
         } catch (SQLiteException e) {
             Log.e("DatabaseError", e.getMessage());
@@ -482,4 +521,5 @@ public class HomeActivity extends AppCompatActivity {
             // Handle database upgrades here
         }
     }
+
 }

@@ -28,33 +28,26 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="370dp"
-        android:layout_height="630dp"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/relativeLayout"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="115dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="48dp"
         android:text="Notice: Bus Service Disruptions 🚧&#xA;&#xA;🚍G9 Route (Katpadi to KV Kuppam, 2:00 PM):&#xA;  🚨Service Unavailable&#xA;  🚨Please Seek Alternative Transportation&#xA;
 
                                                        🚍U12 Route(Rayalvedu to Vellore, 10:15 am):&#xA;   🛠️Bus Breakdown Reported&#xA;   🛠️Delay Expected: Approximately 1 Hour"
         android:textSize="24sp" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="104dp"
-        android:layout_height="91dp"
-        android:layout_below="@+id/relativeLayout"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
+    <WebView
+        android:id="@+id/events"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/textView5"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="156dp"
-        android:layout_marginLeft="156dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="151dp"
-        android:layout_marginRight="151dp"
-        app:srcCompat="@drawable/notify" />
+        android:layout_marginEnd="411dp"
+        android:layout_marginBottom="318dp" />
 
 </RelativeLayout>
